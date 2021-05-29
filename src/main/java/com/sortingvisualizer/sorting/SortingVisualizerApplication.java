@@ -1,9 +1,8 @@
-package com.sortingvisualizer.algorithms;
+package com.sortingvisualizer.sorting;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
+
 
 /**
  * The @RestController annotation flags the class as a rest controller which means that it is ready for use by Spring MVC to handle requests.
@@ -16,14 +15,6 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 public class SortingVisualizerApplication {
-
-	@Bean
-//	@LoadBalanced								----------------> 					DOES NOT WORK!!!!!
-	public RestTemplate getRestTemplate(){
-
-		return new RestTemplate();
-
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(SortingVisualizerApplication.class, args);
