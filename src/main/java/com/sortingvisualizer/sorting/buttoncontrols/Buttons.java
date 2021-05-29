@@ -1,5 +1,8 @@
 package com.sortingvisualizer.sorting.buttoncontrols;
 
+import com.sortingvisualizer.sorting.description.AlgoDescription;
+import com.sortingvisualizer.sorting.entity.Algorithms;
+
 import java.util.List;
 import java.util.Random;
 
@@ -59,6 +62,54 @@ public class Buttons {
         }
 
         return speed;
+
+    }
+
+    public Algorithms getBubbleSortInfo(Integer algoId) {
+
+        AlgoDescription description = new AlgoDescription();
+
+        switch (algoId)
+        {
+            //Bubble Sort
+            case 1:
+                Algorithms bubbleSort = new Algorithms("Bubble Sort", description.bubbleSortDesc());
+                return bubbleSort;
+
+                //Selection Sort
+            case 2:
+                Algorithms selectionSort = new Algorithms("Selection Sort", description.selectionSortDesc());
+                return selectionSort;
+
+                //Insertion Sort
+            case 3:
+                Algorithms insertionSort = new Algorithms("Insertion Sort", description.insertionSortDesc());
+                return insertionSort;
+
+                //Shell Sort
+            case 4:
+                Algorithms shellSort = new Algorithms("Shell Sort", description.shellSortDesc());
+                return shellSort;
+
+                //Merge Sort
+            case 5:
+                Algorithms mergeSort = new Algorithms("Merge Sort", description.mergeSortDesc());
+                return mergeSort;
+
+                //Quick Sort
+            case 6:
+                Algorithms quickSort = new Algorithms("Quick Sort", description.quickSortDesc());
+                return quickSort;
+
+                //Radix Sort
+            case 7:
+                Algorithms radixSort = new Algorithms("Radix Sort", description.radixSortDesc());
+                return radixSort;
+
+            default:
+                return null;
+
+        }
 
     }
 
