@@ -1,6 +1,7 @@
 package com.sortingvisualizer.sorting.algorithms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SelectionSort implements ISortingAlgorithm {
@@ -10,7 +11,6 @@ public class SelectionSort implements ISortingAlgorithm {
         int n = inputList.size();
         int smallest = 0;
         List<Integer> sortedList = new ArrayList<>();
-        SwapElementsInList swapElements = new SwapElementsInList();
 
         for(int i = 0; i < n-1; i++) {
             smallest = i;
@@ -24,7 +24,7 @@ public class SelectionSort implements ISortingAlgorithm {
 
             if(smallest !=  i) {
 
-                sortedList = swapElements.swap(inputList, smallest, i);
+                Collections.swap(inputList, smallest, i);
 
             }
 
