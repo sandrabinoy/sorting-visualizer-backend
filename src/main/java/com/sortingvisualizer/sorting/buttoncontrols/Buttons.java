@@ -101,11 +101,6 @@ public class Buttons {
                 Algorithms quickSort = new Algorithms("Quick Sort", description.quickSortDesc());
                 return quickSort;
 
-                //Radix Sort
-            case 7:
-                Algorithms radixSort = new Algorithms("Radix Sort", description.radixSortDesc());
-                return radixSort;
-
             default:
                 return null;
 
