@@ -1,9 +1,8 @@
 package com.sortingvisualizer.sorting.buttoncontrols;
 
 import com.sortingvisualizer.sorting.description.AlgoDescription;
-import com.sortingvisualizer.sorting.entity.Algorithms;
+import com.sortingvisualizer.sorting.entity.Algorithm;
 
-import java.util.List;
 import java.util.Random;
 
 public class Buttons {
@@ -65,7 +64,7 @@ public class Buttons {
 
     }
 
-    public Algorithms getBubbleSortInfo(Integer algoId) {
+    public Algorithm getBubbleSortInfo(Integer algoId) {
 
         AlgoDescription description = new AlgoDescription();
 
@@ -73,32 +72,32 @@ public class Buttons {
         {
             //Bubble Sort
             case 1:
-                Algorithms bubbleSort = new Algorithms("Bubble Sort", description.bubbleSortDesc());
+                Algorithm bubbleSort = new Algorithm("Bubble Sort", description.bubbleSortDesc());
                 return bubbleSort;
 
                 //Selection Sort
             case 2:
-                Algorithms selectionSort = new Algorithms("Selection Sort", description.selectionSortDesc());
+                Algorithm selectionSort = new Algorithm("Selection Sort", description.selectionSortDesc());
                 return selectionSort;
 
                 //Insertion Sort
             case 3:
-                Algorithms insertionSort = new Algorithms("Insertion Sort", description.insertionSortDesc());
+                Algorithm insertionSort = new Algorithm("Insertion Sort", description.insertionSortDesc());
                 return insertionSort;
 
                 //Shell Sort
             case 4:
-                Algorithms shellSort = new Algorithms("Shell Sort", description.shellSortDesc());
+                Algorithm shellSort = new Algorithm("Shell Sort", description.shellSortDesc());
                 return shellSort;
 
                 //Merge Sort
             case 5:
-                Algorithms mergeSort = new Algorithms("Merge Sort", description.mergeSortDesc());
+                Algorithm mergeSort = new Algorithm("Merge Sort", description.mergeSortDesc());
                 return mergeSort;
 
                 //Quick Sort
             case 6:
-                Algorithms quickSort = new Algorithms("Quick Sort", description.quickSortDesc());
+                Algorithm quickSort = new Algorithm("Quick Sort", description.quickSortDesc());
                 return quickSort;
 
             default:

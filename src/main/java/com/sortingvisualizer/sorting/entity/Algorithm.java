@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "algorithms")
-public class Algorithms {
+public class Algorithm {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -45,7 +45,7 @@ public class Algorithms {
                 '}';
     }
 
-    public Algorithms(String algoName, String algoDescription) {
+    public Algorithm(String algoName, String algoDescription) {
         this.algoName = algoName;
         this.algoDescription = algoDescription;
     }
