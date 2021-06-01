@@ -17,7 +17,7 @@ public class Buttons {
         Random random = new Random();
         int[] array = new int[size];
         for (int i = 0; i < size; i++) {
-            array[i] = random.nextInt();
+            array[i] = random.nextInt(1000);
         }
 
         return array;
